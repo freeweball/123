@@ -74,10 +74,16 @@
 
 .ed-curses__slide {
   display: flex;
+  max-width: 290px;
   flex-direction: column;
   padding-bottom: 29px;
 
   border: 1px solid #f2f2f2;
+
+  @media (max-width: 580px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .ed-curses__title.ed-curses__title--bottom.ed-title {

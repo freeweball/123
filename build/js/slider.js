@@ -2,6 +2,9 @@ const sliders2 = `.swiper-container-s2`;
 const sliders3 = `.swiper-container-s3`;
 
 const slideHeightSwiper = (SliderClass) => {
+  const wrapperPage = document.querySelector(`.education-main`);
+  const buttonPrevs = wrapperPage.querySelectorAll(`.swiper-button-prev`);
+  const buttonNexts = wrapperPage.querySelectorAll(`.swiper-button-next`);
   const slider = document.querySelector(SliderClass);
   const slideList = slider.querySelectorAll(`.ed-curses__slide`);
   let slideHeight = 0;
@@ -12,9 +15,19 @@ const slideHeightSwiper = (SliderClass) => {
       slideHeight = maxHeight;
     }
   };
-    for (let i = 0; i < slideList.length; i++) {
-      slideList[i].style.height = slideHeight + `px`;
-    };
+
+  for (let i = 0; i < slideList.length; i++) {
+    slideList[i].style.height = slideHeight + `px`;
+  };
+
+  for (let i = 0; i < buttonPrevs.length; i++) {
+    buttonPrevs[i].style.opacity = '1';
+  };
+
+  for (let i = 0; i < buttonNexts.length; i++) {
+    buttonNexts[i].style.opacity = '1';
+  };
+
 };
 
 var mySwiper = new Swiper('.swiper-container-s1', {

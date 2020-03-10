@@ -292,3 +292,9 @@ html:not(.touchevents) .swiper-button-next:hover {
     transform: translateX(0);
   }
 }
+
+.education-main .swiper-button-prev,
+.education-main .swiper-button-next {
+  opacity: 0;
+  transition: 0.5s;
+}
