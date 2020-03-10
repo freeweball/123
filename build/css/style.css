@@ -98,7 +98,10 @@ input[type="number"] {
   border-radius: 27px;
   font-size: 18px;
   font-weight: 700;
-  line-height: 44px;
+  line-height: 20px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
   -webkit-transition: all 0.4s;
   transition: all 0.4s; }
   .btn:hover {
@@ -152,6 +155,9 @@ a {
     background-color: #2a5f85;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%); }
+    @media (max-width: 768px) {
+      .education-main__consult::before {
+        width: 100vw; } }
 
 .education-main__consult-text {
   margin: 0;
@@ -178,6 +184,9 @@ a {
     background-color: #f5f5f5;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%); }
+    @media (max-width: 768px) {
+      .education-main__specialists::before {
+        width: 100vw; } }
 
 .education-main__specialists-title {
   width: 600px;
@@ -285,6 +294,9 @@ a {
     background-color: #f5f5f5;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%); }
+    @media (max-width: 768px) {
+      .ed-causes::before {
+        width: 100vw; } }
 
 .ed-causes__title {
   margin-bottom: 40px; }
@@ -448,14 +460,18 @@ a {
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column;
-      padding-left: 15px;
-      padding-right: 15px; } }
+      padding-left: 20px;
+      padding-right: 20px; } }
   @media (max-width: 1120px) {
     .ed-specialists-slide {
       width: 100%; } }
 
 .ed-specialists-slide img {
-  margin: auto; }
+  margin-bottom: auto; }
+  @media (max-width: 768px) {
+    .ed-specialists-slide img {
+      margin-left: auto;
+      margin-right: auto; } }
 
 .ed-specialists-slide__list {
   margin: 0;
@@ -473,6 +489,9 @@ a {
 .ed-specialists-slide__wrapper {
   margin-left: 42px;
   padding-top: 13px; }
+  @media (max-width: 768px) {
+    .ed-specialists-slide__wrapper {
+      margin-left: 0; } }
 
 .ed-specialists-slide__title {
   margin: 0;
@@ -550,7 +569,8 @@ a {
   padding-right: 50px;
   background-image: url("../img/slide-2.jpg");
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  outline: 2px solid #eef6f7; }
   @media (max-width: 1000px) {
     .ed-start__banner {
       width: 100%; } }
@@ -600,6 +620,9 @@ a {
     background-color: #f5f5f5;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%); }
+    @media (max-width: 768px) {
+      .ed-technology::before {
+        width: 100vw; } }
 
 .ed-technology__list,
 .ed-technology__include-list {
@@ -657,7 +680,8 @@ a {
   background-color: #ffffff; }
   @media (max-width: 1000px) {
     .ed-technology__include-item {
-      width: 100%; } }
+      width: 100%;
+      margin-bottom: 10px; } }
   @media (max-width: 450px) {
     .ed-technology__include-item {
       -webkit-box-orient: vertical;
@@ -665,7 +689,9 @@ a {
           -ms-flex-direction: column;
               flex-direction: column;
       text-align: center;
-      padding-right: 0; } }
+      padding-right: 0;
+      padding-left: 20px;
+      padding-right: 20px; } }
 
 .ed-technology__include-item p {
   margin: 0;
@@ -701,7 +727,8 @@ a {
               justify-content: center;
       -webkit-box-align: center;
           -ms-flex-align: center;
-              align-items: center; } }
+              align-items: center;
+      display: none; } }
   @media (max-width: 1120px) {
     .ed-technology__image {
       -ms-flex-negative: 1;
@@ -1055,7 +1082,7 @@ html:not(.touchevents) .swiper-button-next:hover {
 .swiper-button-prev {
   width: 25px;
   height: 48px;
-  background-image: url("../../img/prev-btn.png");
+  background-image: url("../img/prev-btn.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
@@ -1110,3 +1137,9 @@ html:not(.touchevents) .swiper-button-next:hover {
   right: 0;
   -webkit-transform: rotate(180deg) translateX(0);
           transform: rotate(180deg) translateX(0); }
+
+.swiper-container-s1 {
+  outline: 2px solid #eef6f7; }
+
+.swiper-container-s1 .swiper-slide {
+  border: none; }

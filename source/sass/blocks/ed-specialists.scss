@@ -10,8 +10,8 @@
 
   @media (max-width: 768px) {
     flex-direction: column;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   @media (max-width: 1120px) {
@@ -20,7 +20,12 @@
 }
 
 .ed-specialists-slide img {
-  margin: auto;
+  margin-bottom: auto;
+
+  @media (max-width: 768px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .ed-specialists-slide__list {
@@ -42,6 +47,10 @@
 .ed-specialists-slide__wrapper {
   margin-left: 42px;
   padding-top: 13px;
+
+  @media (max-width: 768px) {
+    margin-left: 0;
+  }
 }
 
 .ed-specialists-slide__title {

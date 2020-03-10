@@ -111,7 +111,10 @@ input[type="number"] {
   border-radius: 27px;
   font-size: 18px;
   font-weight: 700;
-  line-height: 44px;
+  line-height: 20px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
   transition: all 0.4s;
 
   &:hover {
