@@ -454,7 +454,7 @@ a {
   padding-left: 60px;
   padding-right: 60px;
   background-color: #ffffff; }
-  @media (max-width: 768px) {
+  @media (max-width: 580px) {
     .ed-specialists-slide {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
@@ -466,10 +466,10 @@ a {
     .ed-specialists-slide {
       width: 100%; } }
 
-.ed-specialists-slide img {
+.ed-specialists-slide__image {
   margin-bottom: auto; }
-  @media (max-width: 768px) {
-    .ed-specialists-slide img {
+  @media (max-width: 580px) {
+    .ed-specialists-slide__image {
       margin-left: auto;
       margin-right: auto; } }
 
@@ -489,7 +489,7 @@ a {
 .ed-specialists-slide__wrapper {
   margin-left: 42px;
   padding-top: 13px; }
-  @media (max-width: 768px) {
+  @media (max-width: 580px) {
     .ed-specialists-slide__wrapper {
       margin-left: 0; } }
 
@@ -501,6 +501,10 @@ a {
   font-size: 24px;
   font-weight: 700;
   line-height: 24px; }
+
+@media (max-width: 580px) {
+  .ed-specialists-slide__image {
+    width: 50%; } }
 
 .ed-start {
   padding-top: 100px;
@@ -807,6 +811,9 @@ a {
 
 .ed-result__title {
   margin-bottom: 39px; }
+  @media (max-width: 1120px) {
+    .ed-result__title {
+      padding-right: 70px; } }
 
 .ed-result__description {
   margin: 0;
@@ -1117,7 +1124,7 @@ html:not(.touchevents) .swiper-button-next:hover {
     .sw-container .swiper-button-prev,
     .sw-container .swiper-button-next {
       top: auto;
-      bottom: -60px; } }
+      bottom: -70px; } }
 
 .ed-reviews .swiper-button-prev,
 .ed-reviews .swiper-button-next {
@@ -1143,3 +1150,21 @@ html:not(.touchevents) .swiper-button-next:hover {
 
 .swiper-container-s1 .swiper-slide {
   border: none; }
+
+@media (max-width: 1120px) {
+  .ed-result .swiper-button-prev,
+  .ed-result .swiper-button-next {
+    top: -42px; } }
+
+@media (max-width: 1120px) {
+  .ed-result .swiper-button-next {
+    right: 0;
+    -webkit-transform: rotate(180deg) translateX(0);
+            transform: rotate(180deg) translateX(0); } }
+
+@media (max-width: 1120px) {
+  .ed-result .swiper-button-prev {
+    right: 45px;
+    left: auto;
+    -webkit-transform: translateX(0);
+            transform: translateX(0); } }

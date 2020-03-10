@@ -239,7 +239,7 @@ html:not(.touchevents) .swiper-button-next:hover {
 
   @media (max-width: 1120px) {
     top: auto;
-    bottom: -60px;
+    bottom: -70px;
   }
 }
 
@@ -269,4 +269,26 @@ html:not(.touchevents) .swiper-button-next:hover {
 
 .swiper-container-s1 .swiper-slide {
   border: none;
+}
+
+.ed-result .swiper-button-prev,
+.ed-result .swiper-button-next {
+  @media (max-width: 1120px) {
+    top: -42px;
+  }
+}
+
+.ed-result .swiper-button-next {
+  @media (max-width: 1120px) {
+    right: 0;
+    transform: rotate(180deg) translateX(0);
+  }
+}
+
+.ed-result .swiper-button-prev {
+  @media (max-width: 1120px) {
+    right: 45px;
+    left: auto;
+    transform: translateX(0);
+  }
 }

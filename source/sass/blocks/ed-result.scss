@@ -31,6 +31,10 @@
 
 .ed-result__title {
   margin-bottom: 39px;
+
+  @media (max-width: 1120px) {
+    padding-right: 70px;
+  }
 }
 
 .ed-result__description {
