@@ -1,0 +1,56 @@
+.ed-specialists-slide {
+  display: flex;
+  width: 960px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 60px;
+  padding-right: 60px;
+
+  background-color: #ffffff;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  @media (max-width: 1120px) {
+    width: 100%;
+  }
+}
+
+.ed-specialists-slide img {
+  margin: auto;
+}
+
+.ed-specialists-slide__list {
+  margin: 0;
+  padding: 0;
+  padding-top: 25px;
+
+  list-style: none;
+}
+
+.ed-specialists-slide__description {
+  font-family: $f;
+  color: $fc;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 25px;
+}
+
+.ed-specialists-slide__wrapper {
+  margin-left: 42px;
+  padding-top: 13px;
+}
+
+.ed-specialists-slide__title {
+  margin: 0;
+  margin-bottom: 10px;
+
+  font-family: $f;
+  color: $fc;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+}

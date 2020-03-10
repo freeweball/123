@@ -1,0 +1,23 @@
+.ed-reviews {
+  position: relative;
+
+  padding-top: 89px;
+  padding-bottom: 100px;
+}
+
+.ed-reviews__title {
+  margin-bottom: 40px;
+
+  @media (max-width: 450px) {
+    padding-right: 70px;
+  }
+}
+
+.ed-reviews__link {
+  position: relative;
+  left: 50%;
+
+  margin-top: 48px;
+
+  transform: translateX(-50%);
+}

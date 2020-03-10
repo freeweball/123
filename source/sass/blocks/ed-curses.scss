@@ -1,0 +1,90 @@
+.ed-curses {
+  padding-top: 92px;
+  padding-bottom: 99px;
+}
+
+.ed-curses__slider-curs {
+  position: relative;
+}
+
+.ed-curses__slider-form {
+  position: relative;
+}
+
+.ed-curses__description {
+  font-family: $f;
+  color: $fc;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 25px;
+}
+
+.ed-curses__slide-text {
+  flex-grow: 1;
+
+  font-family: $f;
+  color: $fc;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 25px;
+}
+
+.ed-curses__slide-title {
+  font-family: $f;
+  color: #4089b9;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  text-decoration: none;
+
+  border-bottom: 1px solid #4089b9;
+  transition: 0.5s color, 0.5s border;
+
+  &:hover {
+    border-color: transparent;
+  }
+}
+
+.ed-curses__title {
+  margin-bottom: 39px;
+}
+
+.ed-curses__slide-wrapper {
+  flex-grow: 1;
+
+  margin-top: 26px;
+  padding-left: 30px;
+  padding-right: 27px;
+}
+
+.ed-curses__slide-link {
+  width: 100%;
+
+  text-align: center;
+}
+
+.ed-curses__slide-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.ed-curses__slide-text {
+  flex-grow: 1;
+}
+
+.ed-curses__slide {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 29px;
+
+  border: 1px solid #f2f2f2;
+}
+
+.ed-curses__title.ed-curses__title--bottom.ed-title {
+  margin-top: 91px;
+  margin-bottom: 15px;
+}
+
+.ed-curses__description {
+  margin-bottom: 40px;
+}
