@@ -54,7 +54,7 @@
 
 .swiper-button-prev.swiper-button-disabled,
 .swiper-button-next.swiper-button-disabled {
-  opacity: 0.35;
+  opacity: 0.35 !important;
   cursor: auto;
   pointer-events: none;
 }
@@ -297,4 +297,9 @@ html:not(.touchevents) .swiper-button-next:hover {
 .education-main .swiper-button-next {
   opacity: 0;
   transition: 0.5s;
+}
+
+.swiper-pagination-bullets {
+  padding-left: 10px;
+  padding-right: 10px;
 }
